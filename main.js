@@ -64,5 +64,45 @@ do {
   process.stdout.write("\n")
 } */
 
-console.log('Input an integer')
-console.log(readline())
+// console.log('Input an integer')
+// console.log(readline())
+
+// for (let i = 1; i < 1000; i *= 10) {
+/* for (let i = 1; i < 1000; ) {
+  // 1 - 1
+  // 2 - 10
+  // 3 - 100
+  for (let j = 0; j < 3; j++) {
+    let output = (i + j).toString()
+    while (output.length < 5) {
+      output = ' ' + output
+    }
+    process.stdout.write(output)
+  }
+  // console.log(i.toString())
+  process.stdout.write('\n')
+  i++
+  i *= 10
+} */
+
+for (let i = 0; i < 11; i++) {
+  for (let j = 0; j < 11; j++) {
+    let output
+    if (i === 0) {
+      output = j
+      // process.stdout.write(`${j}  `)
+    } else if (j === 0) {
+      output = i
+      // process.stdout.write(`${i}  `)
+    } else {
+      output = i * j
+      // process.stdout.write(`${i * j}  `)
+    }
+    output = output.toString()
+    while (output.length < 5) {
+      output = ' ' + output
+    }
+    process.stdout.write(output)
+  }
+  process.stdout.write("\n")
+}
