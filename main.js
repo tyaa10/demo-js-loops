@@ -106,90 +106,19 @@ do {
   }
   process.stdout.write("\n")
 } */
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 3; i++) {
   for (let j = 0; j < 4; j++) {
+    if ((i ===0 && j === 0) || (i === 0 && j === 2) || (i === 1 && j === 3) || (i === 2 && j === 1)) {
+        process.stdout.write("  X")
+    }  
+        
+    if ((i ===0 && j === 1) || (i === 1 && j === 2) || (i === 2 && j === 2)) {
+        process.stdout.write("  O")
+    }
     
-  if (i ===0 && j === 0) {
-      process.stdout.write("  X")
-  }  
-      
-    if (i ===0 && j === 1) {
-      process.stdout.write("  O")
-  }
-  if (i === 0 && j === 2) {
-      process.stdout.write("  X")
-  } 
-    if (i === 1 && j === 1) {
-      process.stdout.write("  --")
-  }
-  if (i === 1 && j === 2) {
-      process.stdout.write(" O")
-  }
-  if (i === 1 && j === 3) {
-      process.stdout.write("  X")
-  }
-  if (i === 2 && j === 1) {
-      process.stdout.write("  X")
-  }
-  if (i === 2 && j === 2) {
-      process.stdout.write("  O")
-  }
-  if (i === 2 && j === 3) {
-      process.stdout.write("  --")
-  }
-  if (i === 3 && j === 1) {
-      process.stdout.write("  --")
-  }
-  if (i === 3 && j === 2) {
-      process.stdout.write(" X")
-  }
-  if (i === 3 && j === 3) {
-      process.stdout.write("  --")
-  }
-  
-  }
-  process.stdout.write("\n")
-} for (let i = 0; i < 4; i++) {
-  for (let j = 0; j < 4; j++) {
-    
-  if (i ===0 && j === 0) {
-      process.stdout.write("  X")
-  }  
-      
-    if (i ===0 && j === 1) {
-      process.stdout.write("  O")
-  }
-  if (i === 0 && j === 2) {
-      process.stdout.write("  X")
-  } 
-    if (i === 1 && j === 1) {
-      process.stdout.write("  --")
-  }
-  if (i === 1 && j === 2) {
-      process.stdout.write(" O")
-  }
-  if (i === 1 && j === 3) {
-      process.stdout.write("  X")
-  }
-  if (i === 2 && j === 1) {
-      process.stdout.write("  X")
-  }
-  if (i === 2 && j === 2) {
-      process.stdout.write("  O")
-  }
-  if (i === 2 && j === 3) {
-      process.stdout.write("  --")
-  }
-  if (i === 3 && j === 1) {
-      process.stdout.write("  --")
-  }
-  if (i === 3 && j === 2) {
-      process.stdout.write(" X")
-  }
-  if (i === 3 && j === 3) {
-      process.stdout.write("  --")
-  }
-  
+      if ((i === 1 && j === 1) || (i === 2 && j === 3)) {
+        process.stdout.write(" --")
+    }
   }
   process.stdout.write("\n")
 } 
